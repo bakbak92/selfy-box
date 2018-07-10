@@ -63,7 +63,7 @@ export default {
     return {
       sideNav: false,
       menuItems: [
-        {title: 'Service', link: '/commande'},
+        {title: 'Service', link: '/service'},
         {title: 'Commande', link: '/commande'},
         {title: 'Contact', link: '/contact'}
       ],
@@ -79,3 +79,20 @@ export default {
   name: 'App'
 }
 </script>
+<style lang="scss">
+.v-toolbar{
+  background: #494091!important;
+  color: white;
+  .v-toolbar__title{
+    color:white;
+  }
+  .v-toolbar__items{
+    .v-btn--router{
+      color: white;
+    }
+  }
+}
+.v-card__title.teal{
+  background-color: #B8BEC0!important;
+}
+</style>

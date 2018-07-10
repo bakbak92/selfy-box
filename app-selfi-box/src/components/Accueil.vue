@@ -1,17 +1,46 @@
 <template>
+<div>
+<div class="header-home">
+  <div class="presentation">
+    <h1>Titre du concept Man</h1>
+    <p>Aperiam, alias. Rem delectus ab reiciendis</p>
+    <v-btn>
+      Voir nos tarifs
+    </v-btn>
+  </div>
+</div>
 <v-container>
+
   <div>
     <h2>Concept</h2>
   </div>
   <div class="content-concept">
     <div class="concept">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores non incidunt omnis voluptatum nam assumenda adipisci aperiam pariatur aliquid aliquam! Aperiam, alias. Rem delectus ab reiciendis, quos explicabo asperiores vitae.
+      <div>
+        <v-icon>
+          monochrome_photos
+        </v-icon>
+      </div>
+      <h3>Lorem ipsum dolor sit amet</h3>
+      <p>Dolores non incidunt omnis voluptatum nam assumenda adipisci aperiam pariatur aliquid aliquam! Aperiam, alias. Rem delectus ab reiciendis.</p>
     </div>
     <div class="concept">
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae velit deserunt similique perferendis incidunt, magnam sit dolorem eveniet quam ipsam delectus ducimus vitae voluptas voluptatem exercitationem.
+      <div>
+        <v-icon>
+          photo
+        </v-icon>
+      </div>
+      <h3>Lorem ipsum dolor sit amet</h3>
+      <p>Quae velit deserunt similique perferendis incidunt, magnam sit dolorem eveniet quam ipsam delectus ducimus vitae voluptas voluptatem exercitationem.</p>
     </div>
     <div class="concept">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eveniet, sequi id adipisci harum unde dolor rem ad odio, inventore laboriosam neque sapiente facilis quibusdam deserunt porro molestiae culpa. Minus.
+      <div>
+        <v-icon>
+          event
+        </v-icon>
+      </div>
+      <h3>Lorem ipsum dolor sit amet</h3>
+      <p>Nemo eveniet, sequi id adipisci harum unde dolor rem ad odio, inventore laboriosam neque sapiente facilis quibusdam deserunt porro molestiae culpa.</p>
     </div>
   </div>
 
@@ -23,6 +52,8 @@
     ></v-carousel-item>
   </v-carousel>
 </v-container>
+</div>
+
 </template>
 <script>
 export default {
@@ -37,19 +68,39 @@ export default {
   }
 }
 </script>
-<style scss>
-.concept{
-  width: 33.33%;
-  float: left;
-  padding-right: 2rem;
-  text-align: center;
-}
-.content-concept{
-  margin-bottom: 2rem;
-  overflow: hidden;
-}
-h2{
-  text-align: center;
-}
-
+<style lang="scss">
+  .concept{
+    width: 33.33%;
+    float: left;
+    padding-right: 2rem;
+    text-align: center;
+    .v-icon{
+      color: #FA628C;
+    }
+  }
+  .content-concept{
+    margin-bottom: 2rem;
+    overflow: hidden;
+  }
+  h2{
+    text-align: center;
+  }
+  .header-home{
+    height: 450px;
+    box-shadow: inset 2000px 0 0 0 rgba(135, 132, 183, 0.5);
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1505340843-6554dea802df?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b2f0395c3b53f5482863d86058ad1ca6&auto=format&fit=crop&w=1050&q=80);
+    .presentation{
+      padding-top: 7rem;
+      color: white;
+      text-align: center;
+      p{
+        font-size: 1.8rem;
+      }
+      .v-btn{
+        background-color: #FA628C!important;
+        color: white;
+      }
+    }
+  }
 </style>
