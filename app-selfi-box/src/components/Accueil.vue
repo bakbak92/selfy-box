@@ -87,9 +87,8 @@ export default {
   }
   .header-home{
     height: 450px;
-    box-shadow: inset 2000px 0 0 0 rgba(135, 132, 183, 0.5);
     background-size: cover;
-    background-image: url(https://images.unsplash.com/photo-1505340843-6554dea802df?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b2f0395c3b53f5482863d86058ad1ca6&auto=format&fit=crop&w=1050&q=80);
+    background-image: url(https://images.unsplash.com/photo-1518353053542-7ea33d942319?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=49b132188d2041ed79058f12047afb26&auto=format&fit=crop&w=1051&q=80);
     .presentation{
       padding-top: 7rem;
       color: white;

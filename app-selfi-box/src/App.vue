@@ -81,7 +81,7 @@ export default {
 </script>
 <style lang="scss">
 .v-toolbar{
-  background: #494091!important;
+  background: #181818!important;
   color: white;
   .v-toolbar__title{
     color:white;
