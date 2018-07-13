@@ -80,6 +80,9 @@ export default {
 }
 </script>
 <style lang="scss">
+main{
+  background: #f7f7f7;
+}
 .v-toolbar{
   background: #181818!important;
   color: white;
