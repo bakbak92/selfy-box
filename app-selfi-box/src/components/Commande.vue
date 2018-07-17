@@ -58,9 +58,14 @@
       </div>
       <div class="input-form">
         <div class="content-time">
-          <p>Heure de l'évenement</p>
-          <v-time-picker color="red darken-2" v-model="e7" format="24hr"></v-time-picker>
-          <v-time-picker color="red darken-2" v-model="e7" format="24hr"></v-time-picker>
+          <div class="time">
+            <p>Heure debut de l'évenement</p>
+            <v-time-picker color="red darken-2" v-model="e7" format="24hr"></v-time-picker>
+          </div>
+          <div class="time">
+            <p>Heure fin de l'évenement</p>
+            <v-time-picker color="red darken-2" v-model="e7" format="24hr"></v-time-picker>
+          </div>
         </div>
       </div>
       <div class="input-form">
@@ -68,7 +73,7 @@
         <v-textarea
           solo
           name="input-7-4"
-          label="Solo textarea"
+          label="Informations supplémentaire"
         ></v-textarea>
       </div>
       <div class="input-form">
@@ -106,5 +111,21 @@ export default {
 }
 .input-form{
   margin-bottom: 1rem;
+}
+.content-time{
+  padding: 1rem 0;
+}
+.time{
+  float: left;
+  margin-bottom: 2rem;
+  &:first-child{
+    margin-right: 1rem;
+  }
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    &:first-child{
+      margin-right: 0;
+    }
+  }
 }
 </style>
